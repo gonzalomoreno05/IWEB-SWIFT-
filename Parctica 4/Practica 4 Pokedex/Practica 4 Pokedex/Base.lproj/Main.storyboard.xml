@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Types Table View Controller-->
+        <scene sceneID="9jV-9g-6Ve">
+            <objects>
+                <tableViewController id="fgx-3p-bfv" customClass="TypesTableViewController" customModule="Practica_4_Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NiQ-Es-IX3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Type Cell" rowHeight="117" id="zzS-dO-cWa" customClass="TypesTableViewCell" customModule="Practica_4_Pokedex" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="117"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zzS-dO-cWa" id="VaP-uk-JPO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiQ-3E-ena">
+                                            <rect key="frame" x="16" y="59.5" width="254" height="16"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <color key="textColor" red="0.23721324826688617" green="0.54876604451045408" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jtV-30-w9k">
+                                            <rect key="frame" x="278" y="20" width="77" height="77"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="jtV-30-w9k" secondAttribute="height" multiplier="1:1" id="QRC-pe-koi"/>
+                                                <constraint firstAttribute="width" secondItem="jtV-30-w9k" secondAttribute="height" multiplier="1:1" id="fgc-QS-EuH"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-BC-8pY">
+                                            <rect key="frame" x="16" y="20" width="254" height="31.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <color key="textColor" red="0.0070189631881780734" green="0.10675670972598295" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="BgJ-BC-8pY" firstAttribute="leading" secondItem="VaP-uk-JPO" secondAttribute="leadingMargin" id="2LG-SZ-bV7"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="fiQ-3E-ena" secondAttribute="bottom" constant="30.5" id="A7a-Ny-6XR"/>
+                                        <constraint firstItem="jtV-30-w9k" firstAttribute="top" secondItem="VaP-uk-JPO" secondAttribute="topMargin" constant="9" id="EmN-eG-USB"/>
+                                        <constraint firstItem="jtV-30-w9k" firstAttribute="leading" secondItem="BgJ-BC-8pY" secondAttribute="trailing" constant="8" symbolic="YES" id="FTG-TV-PWh"/>
+                                        <constraint firstItem="BgJ-BC-8pY" firstAttribute="top" secondItem="VaP-uk-JPO" secondAttribute="topMargin" constant="9" id="JQg-Jd-fS0"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="jtV-30-w9k" secondAttribute="trailing" constant="4" id="f9Z-EE-57D"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="jtV-30-w9k" secondAttribute="bottom" constant="9" id="orm-Cd-Rd6"/>
+                                        <constraint firstItem="jtV-30-w9k" firstAttribute="leading" secondItem="BgJ-BC-8pY" secondAttribute="trailing" constant="8" symbolic="YES" id="p85-Ve-AWp"/>
+                                        <constraint firstItem="fiQ-3E-ena" firstAttribute="top" secondItem="BgJ-BC-8pY" secondAttribute="bottom" constant="8" symbolic="YES" id="twp-pv-2Se"/>
+                                        <constraint firstItem="jtV-30-w9k" firstAttribute="leading" secondItem="fiQ-3E-ena" secondAttribute="trailing" constant="8" symbolic="YES" id="vTa-ru-CKZ"/>
+                                        <constraint firstItem="fiQ-3E-ena" firstAttribute="leading" secondItem="VaP-uk-JPO" secondAttribute="leadingMargin" id="x2W-O7-Ibg"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="counterLabel" destination="fiQ-3E-ena" id="gTb-3H-zax"/>
+                                    <outlet property="iconImageView" destination="jtV-30-w9k" id="faD-kg-Fmc"/>
+                                    <outlet property="nameLabel" destination="BgJ-BC-8pY" id="EnV-r3-1QA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fgx-3p-bfv" id="4f7-hH-7nW"/>
+                            <outlet property="delegate" destination="fgx-3p-bfv" id="Utz-f4-fMe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="hVh-Er-rhL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhJ-6j-O7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="108.39580209895054"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ads-eK-bGE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qrd-in-E6A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gJS-Ke-GcS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fgx-3p-bfv" kind="relationship" relationship="rootViewController" id="unp-NY-mek"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="InV-pI-bsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.40000000000001" y="108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>
