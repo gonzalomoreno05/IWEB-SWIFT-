@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="roq-J5-hkA">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trivia Table View Controller-->
+        <scene sceneID="UGs-sG-Lv7">
+            <objects>
+                <tableViewController id="roq-J5-hkA" customClass="TriviaTableViewController" customModule="P5_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yKe-JA-LxP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Smg-gN-zSJ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="82" id="0eM-GQ-C0a" customClass="TriviaTableViewCell" customModule="P5_Quiz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="320" height="82"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0eM-GQ-C0a" id="mdk-5p-7Lu">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yaq-Fd-gr6">
+                                            <rect key="frame" x="12" y="11" width="65" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="gLw-qU-FAY"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5q-Jc-EDl">
+                                            <rect key="frame" x="85" y="51" width="40" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddb-ah-fYH">
+                                            <rect key="frame" x="85" y="11" width="40" height="19"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="19" id="Bqj-PH-gCs"/>
+                                                <constraint firstAttribute="width" constant="40" id="heu-JT-efl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ddb-ah-fYH" firstAttribute="leading" secondItem="r5q-Jc-EDl" secondAttribute="leading" id="AWA-HS-tqr"/>
+                                        <constraint firstItem="r5q-Jc-EDl" firstAttribute="top" secondItem="ddb-ah-fYH" secondAttribute="bottom" constant="21" id="DRJ-qy-x4V"/>
+                                        <constraint firstItem="ddb-ah-fYH" firstAttribute="leading" secondItem="yaq-Fd-gr6" secondAttribute="trailing" constant="8" id="HxL-fe-aDN"/>
+                                        <constraint firstItem="yaq-Fd-gr6" firstAttribute="leading" secondItem="mdk-5p-7Lu" secondAttribute="leadingMargin" constant="-4" id="QcR-pM-xsB"/>
+                                        <constraint firstItem="ddb-ah-fYH" firstAttribute="trailing" secondItem="r5q-Jc-EDl" secondAttribute="trailing" id="W6U-95-YlC"/>
+                                        <constraint firstItem="ddb-ah-fYH" firstAttribute="top" secondItem="mdk-5p-7Lu" secondAttribute="topMargin" id="bN5-m4-U7x"/>
+                                        <constraint firstItem="ddb-ah-fYH" firstAttribute="top" secondItem="yaq-Fd-gr6" secondAttribute="top" id="bk2-aO-dhL"/>
+                                        <constraint firstItem="ddb-ah-fYH" firstAttribute="leading" secondItem="yaq-Fd-gr6" secondAttribute="trailing" constant="8" symbolic="YES" id="bn6-6u-j6b"/>
+                                        <constraint firstItem="ddb-ah-fYH" firstAttribute="leading" secondItem="mdk-5p-7Lu" secondAttribute="leading" constant="85" id="jm2-ly-f46"/>
+                                        <constraint firstItem="yaq-Fd-gr6" firstAttribute="bottom" secondItem="r5q-Jc-EDl" secondAttribute="bottom" id="x6t-PD-QVt"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="AutorLabel" destination="r5q-Jc-EDl" id="QN6-aG-atB"/>
+                                    <outlet property="TriviaImagen" destination="yaq-Fd-gr6" id="ecv-SB-C6e"/>
+                                    <outlet property="TriviaLabel" destination="ddb-ah-fYH" id="XYO-dz-kZ7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="roq-J5-hkA" id="nOe-Mr-g7H"/>
+                            <outlet property="delegate" destination="roq-J5-hkA" id="UZX-gX-xEs"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYS-xa-e8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148.125" y="87.676056338028175"/>
+        </scene>
+    </scenes>
+</document>
