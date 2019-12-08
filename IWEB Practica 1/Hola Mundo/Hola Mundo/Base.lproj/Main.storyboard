@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hola_Mundo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mWv-Re-nFm">
+                                <rect key="frame" x="62" y="185.5" width="196" height="1161.5"/>
+                            </mapView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-NC-Xha">
+                                <rect key="frame" x="60" y="147.5" width="200" height="31"/>
+                                <connections>
+                                    <action selector="valueAlpha:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dai-Pj-bdo"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola Mundo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YB-2G-oVc">
+                                <rect key="frame" x="39" y="39" width="242" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.99050244040000002" green="1" blue="0.98116030600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fn1-Qi-kEK">
+                                <rect key="frame" x="136" y="90.5" width="48" height="30"/>
+                                <color key="backgroundColor" red="0.85935476040000003" green="0.82270535300000003" blue="0.48379671969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.5" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="r2d-2l-kVz"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sol">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateSol:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1i9-4J-IbJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgX-vi-prR">
+                                <rect key="frame" x="206" y="90.5" width="48" height="30"/>
+                                <color key="backgroundColor" red="0.51203109820000003" green="0.84043069950000004" blue="0.83892852080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Mundo">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateMundo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JG6-pw-Rjb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iof-FK-95h">
+                                <rect key="frame" x="62" y="90.5" width="34" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.73417608072925156" blue="0.63661006789415597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Hola ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateHola:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZb-3o-Lsm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2752865706" green="0.43305966299999998" blue="0.45903497409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1YB-2G-oVc" firstAttribute="centerX" secondItem="mWv-Re-nFm" secondAttribute="centerX" id="3gq-En-SUu"/>
+                            <constraint firstItem="1YB-2G-oVc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="6Eg-Ca-gce"/>
+                            <constraint firstItem="IGm-NC-Xha" firstAttribute="top" secondItem="LgX-vi-prR" secondAttribute="bottom" constant="27" id="6fO-Fu-3B6"/>
+                            <constraint firstItem="IGm-NC-Xha" firstAttribute="leading" secondItem="mWv-Re-nFm" secondAttribute="leading" id="AzA-ba-U19"/>
+                            <constraint firstItem="iof-FK-95h" firstAttribute="top" secondItem="1YB-2G-oVc" secondAttribute="bottom" constant="18" id="CJg-Rj-c4L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LgX-vi-prR" secondAttribute="trailing" constant="50" id="DNS-ZK-xzs"/>
+                            <constraint firstItem="1YB-2G-oVc" firstAttribute="centerX" secondItem="Fn1-Qi-kEK" secondAttribute="centerX" id="HIk-Yc-elU"/>
+                            <constraint firstItem="1YB-2G-oVc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="LaF-xd-soR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mWv-Re-nFm" secondAttribute="bottom" constant="19" id="XjL-gQ-HrB"/>
+                            <constraint firstItem="mWv-Re-nFm" firstAttribute="top" secondItem="IGm-NC-Xha" secondAttribute="bottom" constant="8" symbolic="YES" id="ZnZ-ra-MWq"/>
+                            <constraint firstItem="IGm-NC-Xha" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="dh4-A5-x0r"/>
+                            <constraint firstItem="Fn1-Qi-kEK" firstAttribute="baseline" secondItem="LgX-vi-prR" secondAttribute="baseline" id="fBQ-sJ-p4b"/>
+                            <constraint firstItem="1YB-2G-oVc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iSE-Ip-Omk"/>
+                            <constraint firstItem="LgX-vi-prR" firstAttribute="top" secondItem="1YB-2G-oVc" secondAttribute="bottom" constant="18" id="nN0-nC-rWH"/>
+                            <constraint firstItem="1YB-2G-oVc" firstAttribute="centerX" secondItem="IGm-NC-Xha" secondAttribute="centerX" id="rDU-hA-arf"/>
+                            <constraint firstItem="iof-FK-95h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="yL5-GG-aWb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Slider" destination="IGm-NC-Xha" id="m0a-Ra-RtU"/>
+                        <outlet property="mapView" destination="mWv-Re-nFm" id="ThU-pR-egQ"/>
+                        <outlet property="msgLabel" destination="1YB-2G-oVc" id="Mbz-6G-UFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.40000000000001" y="120.08995502248877"/>
+        </scene>
+    </scenes>
+</document>
